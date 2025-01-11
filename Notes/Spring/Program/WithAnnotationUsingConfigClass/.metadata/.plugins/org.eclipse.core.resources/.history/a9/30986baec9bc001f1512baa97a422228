@@ -1,0 +1,8 @@
+package org.jsp;
+
+public class Nokia implements Mobile{
+
+	public void ring() {
+		System.out.println("Nokia Mobile is ringing") ;
+	}
+}

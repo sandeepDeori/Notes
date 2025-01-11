@@ -1,0 +1,13 @@
+package org.jsp;
+
+public class Student {
+
+	int id ;
+	String name ;
+	double marks ;
+	
+	public void getId(int id) {
+		this.id = id ;
+	}
+	
+}

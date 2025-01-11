@@ -1,0 +1,15 @@
+package org.jsp;
+
+import java.util.Map;
+
+public class Student {
+
+	int id ;
+	String name ;
+	Map<String,Double> marks ;
+	
+	Public void getId(int id) {
+		this.id = id ;
+	}
+	
+}

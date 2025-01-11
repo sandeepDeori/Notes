@@ -1,0 +1,5 @@
+package org.jsp.HasARelationshipAggregationLooselyCoupled;
+
+public class Battery {
+
+}

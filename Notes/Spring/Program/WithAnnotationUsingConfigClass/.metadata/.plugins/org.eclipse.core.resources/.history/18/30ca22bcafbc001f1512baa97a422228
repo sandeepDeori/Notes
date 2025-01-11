@@ -1,0 +1,14 @@
+package org.jsp;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Mobile {
+
+	Battery battery ;
+	
+	
+	public Mobile(Battery battery) {
+		this.battery = battery ;
+	}
+}

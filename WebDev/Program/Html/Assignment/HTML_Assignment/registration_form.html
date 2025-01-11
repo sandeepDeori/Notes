@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      input:valid{
+        border: 2px solid green ;
+      }
+      
+      input:invalid{
+        border: 2px solid red ;
+      }
+    </style>
+</head>
+<body>
+
+    <table>
+    <form>
+        <tr>
+        <th> <label for="fn">Full Name</label> </th>
+        <td> <input type="text" id="fn" value="Major Harshan R Nair" readonly>   </td>
+        </tr>
+
+        <tr>
+            <th> <label for="nn">Nick Name</label></th>
+            <td> <input type="text" id="nn" value="Harshi">   </td>
+        </tr>
+
+        <tr>
+            <th> <label for="pw">Password</label>         </th>
+            <td> <input type="password" id="pw" minlength="8">    </td>
+        </tr>
+
+         <tr>
+            <th><label for="em">Email</label></th>
+            <td><input type="email" id="em"></td>
+         </tr>
+
+         <tr>
+            <th><label for="ae">Age</label></th>
+            <td><input type="number" id="ae" min="18" max="99"></td>
+         </tr>
+
+         <tr>
+            <th><input type="submit" value="Register"></th>
+         </tr>
+    </form>
+    </table>
+    
+</body>
+</html>

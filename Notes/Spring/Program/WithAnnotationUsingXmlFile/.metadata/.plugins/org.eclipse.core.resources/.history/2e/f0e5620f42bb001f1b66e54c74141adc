@@ -1,0 +1,18 @@
+package org.jsp;
+
+public class Student {
+
+	@Value("1")
+	int id ;
+	
+	@Value("Major Sudhir Kumar Walia")
+	String name ;
+	double marks ;
+	
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", marks=" + marks + "]";
+	}
+	
+	
+}

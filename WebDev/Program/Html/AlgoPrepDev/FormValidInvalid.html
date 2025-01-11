@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:valid{
+            border: 3px solid green ;
+        }
+        input:invalid{
+            border: 3px solid red ;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- valid invalid basic example -->
+    <form>
+     <label for="nm">Name</label>
+     <input type="text" id="nm">
+
+     <br/>
+     <br/>
+     <label for="ag">Age</label>
+     <input type="number" id="ag" max="30" min="11">
+
+     <br/>
+     <br/>
+     <label for="mail">Email</label>
+     <input type="email" id="mail">
+     </label>
+
+     <br/>
+     <br/>
+
+    <!-- Not using <input type="submit"> for creating button because then input properties applied through CSS on input tag will be applied to this button also which is created through input tag so better to create button using button tag so CSS property applied on input tag will not affect this button tag -->
+      <button>Submit</button>
+    </form>
+
+
+</body>
+</html>

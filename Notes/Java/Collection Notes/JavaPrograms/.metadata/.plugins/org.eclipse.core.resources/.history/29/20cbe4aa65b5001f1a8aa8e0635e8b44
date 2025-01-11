@@ -1,0 +1,25 @@
+package org.jsp;
+
+public class Employee {
+
+	int id ;
+	String name ;
+	double salary ;
+	String desg ;
+	
+	public Employee(int id , String name , double salary , String desg) {
+		this.id = id ;
+		this.name = name ;
+		this.salary = salary ;
+		this.desg = desg ;
+	}
+	
+	public String toString() {
+	 return "id "+this.id+" name "+this.name+" salary "+this.name+" desg "+this.desg ;
+	}
+	
+	
+	
+	
+	
+}

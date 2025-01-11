@@ -1,0 +1,8 @@
+package org.jsp;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		ApplicationContext con = new AnnotationConfigApplicationContext(MyConfig.class) ;
+	}
+}

@@ -1,0 +1,14 @@
+package org.jsp;
+
+public class Mobile {
+
+	Battery battery ;
+	
+	public void run() {
+		System.out.println("I am mobile") ;
+		battery.display();
+	}
+	
+
+	
+}

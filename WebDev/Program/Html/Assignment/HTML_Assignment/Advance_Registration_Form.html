@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+            <label for="cm"> Comments</label>
+            <textarea id="cm" name="comments" required placeholder="Enter Comments"></textarea>
+        
+            <fieldset>
+            <legend>Choose your Subscription Plan</legend>
+            <input type="radio" name="subscriptionPlan" value="01" id="r1" required> 
+            <label for="r1">3 Months Plan</label>
+
+            <input type="radio" name="subscriptionPlan" value="02" id="r2" required>
+            <label for="r2">6 Months Plan</label>
+
+            <input type="radio" name="subscriptionPlan" value="03" id="r3" checked required>
+            <label for="r3">12 Months Plan</label>
+            </fieldset>
+    
+            <label>Country</label>
+                <select name="country" required>
+                    <option>RUSSIA</option>
+                    <option>USA</option>
+                    <option selected>INDIA</option>
+                    <option>JAPAN</option>
+                </select>
+            
+          <br/>
+          
+          <label for="volume">Volume Level</label>
+          <input type="range" min="0" max="200" id="volume" name="volumeLevel" value="150" required>
+        </table>
+
+        <br/>
+        <br/>
+        <button>SUBMIT</button>
+        <br/>
+        <br/>
+        <button type="reset">RESET</button>
+    </form>
+</body>
+</html>

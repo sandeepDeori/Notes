@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Video</h2>
+    <!--Video-->
+
+    <!-- to see controls on our video, we have to use control attribute explicitly with video tag, without that we will not be able to see controls on our video-->
+    <!--autoplay should used with muted attribute because of browser policies as browser say without user interaction no audio should be played that's why video can only be autoplayed if you mute the audio -->
+    
+    <figure>
+    <video src="../Assets/DreamLife.mp4" height="500px" controls autoplay muted loop></video>
+    <figcaption>MARCOS COMMANDOES OF NAVY</figcaption>
+    </figure>
+
+
+    <!-- to see controls on our audio, we have to use control attribute explicitly with audio tag, without that we will not be able to see controls on our auido-->
+    <h2>Audio</h2>
+
+    <!-- The <figcaption> element is meant to provide description for content inside a <figure> element.  -->
+    <figure>
+    <audio src="../Assets/One-Direction.mp3" controls muted></audio> <!--we can't autoplay audio because of browser policy which says without user interaction no audio can be autoplayed and using autoplay with mute attribute make no sense because playing audio in mute, then why are we even autoplaying audio-->
+    <figcaption> SONG OF ONE DIRECTION</figcaption>
+    </figure>
+
+</body>
+</html>

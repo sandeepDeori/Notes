@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input:valid{
+         border : 3px solid green ;
+        }
+
+        input:invalid{
+           border : 3px solid red ;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<!--
+ [a-z]  -> can enter only one character from a to z
+ [A-Z]  -> can enter only one character from A to Z
+ [0-9]  -> can enter only one character from 0 to 9
+
+ \d{16}  -> d means digit and 16 means number of digits must be entered
+-->
+
+
+<form>
+    
+     <label for="FCN">First Character of your name in capitals</label>
+     <input type="text" id="FCN" pattern="[A-Z]" placeholder="enter">
+
+     <label ></label>
+
+     <br/>
+     <br/>
+      <label for="CCN">Credit Card Number</label>
+      <input type="text" id="CCN" pattern="\d{16}">
+    
+      <br/>
+      <br/>
+
+      <label for="de">Date</label>
+      <input type="text" id="de" pattern="\d{2}-\d{2}-\d{4}">
+
+      <br/>
+      <br/>
+
+       <!-- pattern value taken from chatGPT 
+       in format of dd-mm--yyyy and date should be from 1 to 31, month should be from 1 to 12 and year is from 0000 to any number-->
+      <label for="d">Date</label>
+      <input type="text" id="d" pattern="(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-(\d{4,})">
+      
+      <br/>
+      <br/>
+
+      <!-- pattern value taken from chatGPT -->
+      <label for="ph">Phone Number</label>
+      <input type="tel" pattern="\+91[6-9]\d{9}">
+
+      <br/>
+      <br/>
+      
+      <!-- pattern value taken from chatGPT -->
+      <label for="ul">URL</label>
+      <input type="url" id="ul" pattern="(https?:\/\/)?([\w\-]+\.)+[a-z]{2,6}(:\d+)?(\/[^\s]*)">
+
+
+</form>
+
+</body>
+</html>

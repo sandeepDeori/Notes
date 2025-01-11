@@ -1,0 +1,15 @@
+package org.jsp;
+
+public class Car {
+
+	Engine engine ;
+	
+	public void display() {
+		System.out.println("car is running") ;
+		engine.run() ;
+	}
+	
+	public void setEngine(Engine engine) {
+		this.engine = engine ;
+	}
+}

@@ -1,0 +1,16 @@
+package org.jsp;
+
+import org.springframework.stereotype.Component;
+
+
+@Component
+public class Person {
+
+	Mobile mobile ;
+	
+	public void display() {
+		System.out.println("I am Person") ;
+		mobile.ring() ;
+	}
+	
+}

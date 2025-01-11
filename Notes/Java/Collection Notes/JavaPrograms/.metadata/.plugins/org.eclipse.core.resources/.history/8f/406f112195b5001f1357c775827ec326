@@ -1,0 +1,7 @@
+package org.jsp.HasARelationshipAggregationLooselyCoupled;
+
+public class Mobile {
+	
+	System.out.println("I am Mobile") ;
+
+}

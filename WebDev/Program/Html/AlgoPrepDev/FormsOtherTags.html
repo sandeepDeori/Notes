@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+
+    <!--for writing big messages-->
+    <label for="cmts">Comments</label>
+    <textarea id="cmts" rows="8" cols="15"></textarea>   <!--text area tag is used when we want big input box for writing messages, it's size can be height can be adjusted using rows attribute and width using cols attribute-->
+
+    <br/>
+    <br/>
+
+    <!--Drop Down Menu-->
+
+    <!--name attribute is mandatory in all the tags as this is the key which is submitted to server with the corresponding value-->
+
+    <label for="dropDown">Language</label>
+    <select id="dropDown" name="language">  
+        <option value="01">JAVA</option>  <!--The value entered in value attribute will be submitted to server as value if user select this option -->
+        <option value="02" selected>C++</option> <!-- selected -- by default this value will be selected when the form loads and if selected attribute is not there first option of drop down menu will be selected, and selected attribute can be used with option tag only -->
+        <option valie="03">PYTHON</option>
+    </select>
+
+    <br/>
+    <br/>
+
+    <!--Check box-->
+    <!--Checkboxes are used when you want to allow the user to select multiple options from a list-->
+
+    <fieldset> <!--use to add border around elements present inside it, used when we want to group multiple elements -->
+    <legend>Opt which Arms you want to go</legend>  <!--used to give heading for the elements grouped inside the fieldset-->
+
+    <!-- value inside value attribute will be submitted to server if checkbox is selected otherwise if value attribute is not there by default on value be submitted to server-->
+    <input type="checkbox" id="arm" name="ArmsOpt" value="01">
+    <label for="arm" >Navy</label>
+
+    <input type="checkbox" id="nv" name="ArmsOpt" value="02" checked>
+    <label for="nv">Army</label>
+
+    <input type="checkbox" id="af" name="ArmsOpt" value="03" >
+    <label for="af" >Airforce</label>
+    </fieldset>
+    <br/>
+    <br/>
+
+    <!--Radio Button-->
+
+    <!-- Radio buttons are used when we want user should select only one option from a group of choices, and this functionality will be implemented by grouping all the option using name attribute-->
+    <fieldset>
+    <legend>Choose which Unit you want to go</legend>
+
+   <!-- value inside value attribute will be submitted to server if checkbox is selected otherwise if value attribute is not there by default on value be submitted to server-->
+    <input type="radio" id="ify" name="unit" value="infantry">  <!--name attribute to group the elements, so user can select only one option from multiple options-->
+    <label for="ify">Infantry</label>
+
+    <input type="radio" id="sf" name="unit" value="artillery">
+    <label for="sf">Artillery</label>
+
+    <input type="radio" id="art" name="unit" value="para" checked> <!--checked attribute -- by default this radio button will be selected when the form loads -->
+    <label type="radio" for="art" >Para</label>
+   </fieldset>
+
+   <br/>
+   <br/>
+   <input type="submit" value="I Agree">
+   <input type="reset"> <!--Clicking on this button will reset all the changes done by the user, means form will come back to intial stage-->
+   <br/>
+   <br/>
+   <input type="range" min="100" max="1000" value="800" step="100">
+   </form>   
+</body>
+</html>

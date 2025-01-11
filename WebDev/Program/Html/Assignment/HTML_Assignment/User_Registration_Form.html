@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:valid{
+            border: 3px solid green ;
+        }
+        input:invalid{
+            border: 3px solid red ;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h1 style="text-align: center;">User Registration Form</h1>
+    <form>
+    <table>
+    <tr>
+    <td> <label for="fn"> Full Name</label></td>
+    <td> <input type="text" id="fn" required placeholder="Enter Full Name"> </td> 
+    </tr>
+
+    <tr>
+        <td><label for="ea">Email Address</label></td>
+        <td><input type="email" id="ea"required placeholder="Enter Email Address"></td>
+    </tr>
+
+    <tr>
+        <td><label for="pw">Password</label></td>
+        <td><input type="password" id="pw" required placeholder="Enter password"></td>
+    </tr>
+
+    <tr>
+        <td><label for="cp">Confirm Password</label></td>
+        <td><input type="password" id="cp" required placeholder="Enter password again"></input></td>
+    </tr>
+
+    <tr>
+        <td><label for="dob">Date of birth</label></td>
+        <td><input type="text" id="dob" required placeholder="Enter your date of birth" pattern="(19|20)\d{2}-(0[1-9]|1[0-2])-(0[1-9]|[1-2]\d|3[0-1])"></td>
+    </tr>
+
+    <tr>
+        <td><label for="pn">Phone Number</label></td>
+        <td><input type="text" id="pn" required placeholder="Enter your phone number" pattern="\d{10}"></td>
+    </tr>
+
+    <tr>
+        <td><label for="ccn">Credit card number</label></td>
+        <td><input type="text" id="ccn" required placeholder="Enter credit card number" pattern="\d{16}"></td>
+    </tr>
+
+    <tr>
+      <td><label for="un">UserName</label></td>    
+      <td><input type="text" id="un" required placeholder="Enter your Username" pattern="[a-zA-Z0-9]+"></td>
+    </tr>
+
+    <tr>
+        <td><label for="web">Website</label></td>
+        <td><input type="url" id="web" required placeholder="Enter your Website" pattern="(https?:\/\/)?([a-zA-Z0-9\-]+\.)+[a-zA-Z]{2,6}(:\d+)?(\/[^\s]*)"></td>
+    </tr>
+    
+    </table>
+    <br/>
+    <button>Submit</button>
+    </form>
+</body>
+</html>

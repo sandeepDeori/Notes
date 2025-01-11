@@ -1,0 +1,8 @@
+package org.jsp.HasARelationShipComposition;
+
+public class Battery {
+
+	public void run() {
+		System.out.println("Battery is running") ;
+	}
+}
