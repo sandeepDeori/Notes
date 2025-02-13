@@ -1,8 +1,0 @@
-package org.jsp.HasARelationshipAggregationLooselyCoupled;
-
-public class Battery {
-
-	public void display() {
-		System.out.println("I am Battery") ;
-	}
-}
